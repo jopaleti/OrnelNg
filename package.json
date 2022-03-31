@@ -1,0 +1,16 @@
+{
+  "name": "car_website",
+  "version": "1.0.0",
+  "description": "Car selling website",
+  "main": "main.js",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "author": "flexible",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
