@@ -279,11 +279,16 @@ color: #fff;
 /* SectionLeftfirst */
 .sectionleftfirst {
    display: block;
+   color: black;
 }
 /* sectionleftsecond */
-.sectionleftsecond {
+.section2left {
     display: none;
 }
+.rightIcon {
+    color: grey;
+}
+
 .leftIcon, .rightIcon {
     cursor: pointer;
 }
@@ -479,5 +484,8 @@ footer{
     /* navbar brand */
     .navbar-brand .nav2 {
         font-size: 10px !important;
+    }
+    .slideLeft {
+        bottom: 10% !important;
     }
 }

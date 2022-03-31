@@ -12,7 +12,7 @@ setTimeout(() => {
 }, 2000);
 
 setTimeout(() => {
-    leftSecond = document.getElementsByClassName('sectionleftsecond').item(0)
+    leftSecond = document.getElementsByClassName('section2left').item(0)
     // console.log(leftFirst.style.display);
 }, 1000);
 
@@ -35,3 +35,4 @@ function rightClick(){
     leftIcon.style.color = 'grey';
     rightIcon.style.color = 'black';
 }
+
