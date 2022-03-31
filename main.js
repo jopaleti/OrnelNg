@@ -1,11 +1,16 @@
-// JavaScript code for displaying and showing car reviews
-
-// const leftFirst = document.getElementsByClassName('sectionleftfirst');
-// const leftSecond = document.getElementsByClassName('sectionleftsecond');
 var leftSecond;
 var leftFirst;
-// const leftIcon = document.getElementsByClassName('leftIcon');
-// const rightIcon = document.getElementsByClassName('rightIcon');
+var leftIcon;
+var rightIcon;
+setTimeout(() => {
+    leftIcon = document.getElementsByClassName('leftIcon').item(0);
+    // console.log(leftFirst.style.display);
+}, 1000);
+setTimeout(() => {
+    rightIcon = document.getElementsByClassName('rightIcon').item(0);
+    // console.log(leftFirst.style.display);
+}, 2000);
+
 setTimeout(() => {
     leftSecond = document.getElementsByClassName('sectionleftsecond').item(0)
     // console.log(leftFirst.style.display);
@@ -16,26 +21,17 @@ setTimeout(() => {
     // console.log(leftFirst.style.display);
 }, 1000);
 
-// console.log(leftFirst.childNodes);
-// console.log(leftFirst);
-// console.log(leftSecond);
-// document.addEventListener("DOMContentLoaded", function(e) {// do stuff
-//     console.log(leftFirst)
-// })
-
  const leftClick = ()=>{
     leftFirst.style.display='block';
     leftSecond.style.display = 'none';
-    console.log(leftFirst);
-            // 
-            // leftSecond.style.display = 'none';
-            // leftIcon.style.cursor = 'pointer';
-            // console.log('leftclick');
-            // console.log(leftFirst);  
+    console.log(leftIcon)
+    leftIcon.style.color = 'black';
+    rightIcon.style.color = 'grey';
     
 } 
 function rightClick(){
     leftSecond.style.display = 'block';
     leftFirst.style.display = 'none';
-    console.log('rightclick');
+    leftIcon.style.color = 'grey';
+    rightIcon.style.color = 'black';
 }
