@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %> 
+<body>
+    <%- include('./partials/scroll.ejs') %> 
+    <div class="mainHolder">
+      <!-- Carousel Container -->
+      <div class="front">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://firebasestorage.googleapis.com/v0/b/ornelng-35893.appspot.com/o/Images%2F2021%20Toyota%20Avalon%2Fimg1.jpg?alt=media&token=7342ee77-d1f5-4878-af7b-16705acd39f3" class="d-block w-100" alt="img.jpg" style="height: 100%;">
+                  <div class="x-1 carousel-caption d-md-block">
+                      <h1 class="fs-1 ps-4">Welcome To OrnelNg Motors!</h1>
+                      <h2 class="fs-1 ps-4 text-danger pt-5">It's Nice To Have You Here</h2>
+                      <h4 class="text-light fs-1 ps-4 mt-2">See Our Garage</h4>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://firebasestorage.googleapis.com/v0/b/ornelng-35893.appspot.com/o/Images%2F2020%20Wrangler%2Fimg1.jpg?alt=media&token=7db541a4-04c5-4708-8bd4-68204a32f772" class="d-block w-100" alt="img.jpg" style="height: 100%;">
+                  <div class="carousel-caption x-p d-md-block">
+                    <div class="slideLeft">
+                      <h1>Check Our Best Product</h1>
+                      <h5>We sell all Kinds of Vehicles</h5>
+                  </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://firebasestorage.googleapis.com/v0/b/ornelng-35893.appspot.com/o/Images%2F2019%20Rolls%20Royce%2Fimg5.jpg?alt=media&token=bc9488f2-cbad-4883-8bb3-bce18b9661df" class="d-block w-100" alt="img.jpg" style="height: 100%;">
+                  <div class="carousel-caption x-2 d-md-block">
+                      <div class="slideRight">
+                          <h1>We Offer Standard Services</h1>
+                          <h5>Our Products is the Best</h5>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+          <div class="blackBottom"></div>
+          <!-- NAVBAR -->
+          <div class="navTop">
+              <!-- Navbar_1 -->
+              <nav class="navbar navbar-expand-md navbar-light border-bottom border-1 border-secondary">
+                  <div class="container navtop">
+                    <div class="navbar-brand">
+                      <a class="navbar-brand nav2 text-white navtop-sm"><i class="fa fa-envelope me-2" aria-hidden="true"></i>OrnelNg@gmail.com</a>
+                      <!-- <a class="navbar-brand nav2 text-white navtop-sm" href="#"><i class="fa fa-globe me-2" aria-hidden="true"></i>LANGUAGES</a> -->
+                      
+                    </div>
+                    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <i class="fa fa-bars text-white navtop-sm" aria-hidden="true"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav ms-auto">
+                        <a class="nav-link nav2 text-white" href="#"><i class="fa fa-phone me-2" aria-hidden="true"></i>+2347067903042</a>
+                        <a class="nav-link nav2 text-white" href="#"><i class="fa fa-map-marker me-2" aria-hidden="true"></i>107 SUNSET ONDO., BEVERLY HILLS, CA 90210</a>
+                        
+                      </div>
+                    </div>
+                  </div>
+              </nav>
+
+              <!-- Navbar_2 -->
+              <nav class="navbar navbar-expand-md navbar-light">
+                  <div class="container navtop">
+                    <!-- <a class="navbar-brand" href="#"><h1>ORNELNG</h1></a> -->
+                    <h1 class="logo"><a href="" class="text-decoration-none text-white">ORNEL<span class="text-danger">NG</span></a></h1>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAlt" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <i class="fa fa-bars text-white" aria-hidden="true"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAlt">
+                      <div class="navbar-nav ms-auto">
+                        <a class="nav-link fw-bolder text-white active" aria-current="page" href="/">Home</a>
+                        <a class="nav-link fw-bolder text-white disabled" href="#">Car Mart</a>
+                        <a class="nav-link fw-bolder text-white" href="#products" tabindex="-1" aria-disabled="true">Property Pool</a>
+                        <a class="nav-link fw-bolder text-white active" aria-current="page" href="#">Blog</a>
+                        <a class="nav-link fw-bolder text-white" href="#contact">Contact Us</a>
+                      </div>
+                    </div>
+                  </div>
+              </nav>
+          </div>
+      </div>
+      <!-- Section -->
+      
+        <section class="section" id="products">
+          <div class="sectionLeft">
+              <div class="sectionLeft-header border-bottom border-1 border-secondary">
+                  <h2><span style="color: red;">Recent</span> Cars</h2>
+                  <div class="iconsHeader">
+                      <i class="fa fa-th-large fs-3 me-1 leftIcon" onclick="leftClick()" aria-hidden="true"></i>
+                      <i class="fa fa-th fs-3 rightIcon" onclick="rightClick()" aria-hidden="true"></i>
+                  </div>
+              </div>
+              <div class="sectionleftfirst">
+                <!-- Section1 Start -->
+                <div class="carsContainer mt-4">
+                  <div class="row justify-content-between">
+                    <% cars.forEach((car) => { %> 
+                      <div class="col-md-4 col-lg-4">
+                          <div class="card" style="width: 100%; height: 100%;">
+                                  <div class="image-top " style="height: 35%;">
+                                          <a href="/Ornel/<%= car._id %> "><img src="<%= car.carImage1 %> " class="card-img-top randImage" alt="img.jpg" style="height: 100% !important; object-fit: cover; object-position: center;"></a>
+                                          <a style="cursor: pointer;"><h6 class="head randSelector">FEATURED</h6></a>
+                                          <!-- Card Icons -->
+                                          <div class="icons">
+                                              <a href=""><i class="fa fa-camera" aria-hidden="true"></i></a>
+                                              <a href=""><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+                                          </div>
+                                          <div class="icons-left">
+                                              <a href=""><i class="fa fa-arrows" aria-hidden="true"></i></a>
+                                              <a href=""><i class="fa fa-star" aria-hidden="true"></i></a>
+                                          </div>
+                                  </div>
+                          
+                                  <div class="card-body" style="height: 65%;">
+                                      <div style="height: 100%;">
+                                        <div style="height: 30%;">
+                                          <a href="" class="text-decoration-none text-dark"><h5 class="card-title" style="font-size: 15px !important;"><%= car.carName %> </h5></a>
+                                          <a href="" class="text-decoration-none"><h5 class="text-danger">Price: <%= car.carPrice %> </h5></a>
+                                        </div>
+                                        <div class="card-body-text">
+                                            <p style="font-size: 12px;"><%= car.carDescription %> </p>
+                                        </div>
+                                        <a href="#" class="btn btn-secondary border-0">Details</a>
+                                      </div>
+                                  </div>
+                          </div>
+                      </div>
+                    <% }) %> 
+                    
+                  </div>
+                </div>
+                
+              </div>
+              
+              <!-- Second bar -->
+              <!-- step2 start -->
+              <div class="section2left">
+                <div class="sectionleftsecond mt-4">
+                  <div class="subsectionleft smallXcreen row justify-content-sm-between">
+                    <div class="col-sm-8 col-md-7 col-lg-9">
+                      <div class="card" style="width: 100%;">
+                        <div class="row smallXcreen row1 justify-content-between">
+                          <div class="col-6 size-sm size-X" style="position: relative;">
+                            <img src="./images/car3.jpg" class="card-img-top img-xs" style="width: 105%; height: 100%;" alt="...">
+                            <a href=""><h6 class="head">FEATURED</h6></a>
+                            <!-- Card Icons -->
+                            <div class="icons">
+                              <a href=""><i class="fa fa-camera" aria-hidden="true"></i></a>
+                              <a href=""><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="icons-left">
+                              <a href=""><i class="fa fa-arrows" aria-hidden="true"></i></a>
+                              <a href=""><i class="fa fa-star" aria-hidden="true"></i></a>
+                            </div>
+                          </div>
+                          <div class="col-6 subCardBody">
+                            <div class="card-body">
+                              <div class="card-body-text">
+                                <a href="" class="text-decoration-none text-dark"><h5 class="card-title">Lexus LFA '2014 </h5></a>
+                                <h5 class="" style="width: 100%;"><a href="" class="size-X-price text-decoration-none text-danger" style="width: 100%; display: none;">€150.000</a></h5>
+                                <h6 class="fs-6">Location: <span class="card-span">Germany/Berlin</span></h6>
+                                <h6 class="">Engine: <span class="card-span">6.5cm LP, Petrol</span></h6>
+                                <h6 class="">Kilometer: <span class="card-span">3000km</span></h6>
+                                <h6 class="">Condition: <span class="card-span">Used</span></h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 col-md-3 col-lg-3 text-end subleft">
+                      <div class="row" style="height: 100%;">
+                        <div class="col-6" style="width: 100%;">
+                          <h5 class="" style="width: 100%;"><a href="" class="size-X-none text-decoration-none text-danger" style="width: 100%;">€150.000</a></h5>
+                        </div>
+                        <div class="col-6" style="width: 100%;">
+                          <a href="#" class="btn btn-secondary border-0">Details</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- step2 end -->
+                <!-- step2 start -->
+                <div class="sectionleftsecond mt-4">
+                  <div class="subsectionleft smallXcreen row justify-content-sm-between">
+                    <div class="col-sm-8 col-md-7 col-lg-9">
+                      <div class="card" style="width: 100%;">
+                        <div class="row smallXcreen row1 justify-content-between">
+                          <div class="col-6 size-sm size-X" style="position: relative;">
+                            <img src="./images/car3.jpg" class="card-img-top img-xs" style="width: 105%; height: 100%;" alt="...">
+                            <a href=""><h6 class="head">FEATURED</h6></a>
+                            <!-- Card Icons -->
+                            <div class="icons">
+                              <a href=""><i class="fa fa-camera" aria-hidden="true"></i></a>
+                              <a href=""><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="icons-left">
+                              <a href=""><i class="fa fa-arrows" aria-hidden="true"></i></a>
+                              <a href=""><i class="fa fa-star" aria-hidden="true"></i></a>
+                            </div>
+                          </div>
+                          <div class="col-6 subCardBody">
+                            <div class="card-body">
+                              <div class="card-body-text">
+                                <a href="" class="text-decoration-none text-dark"><h5 class="card-title">Lexus LFA '2014 </h5></a>
+                                <h5 class="" style="width: 100%;"><a href="" class="size-X-price text-decoration-none text-danger" style="width: 100%; display: none;">€150.000</a></h5>
+                                <h6 class="fs-6">Location: <span class="card-span">Germany/Berlin</span></h6>
+                                <h6 class="">Engine: <span class="card-span">6.5cm LP, Petrol</span></h6>
+                                <h6 class="">Kilometer: <span class="card-span">3000km</span></h6>
+                                <h6 class="">Condition: <span class="card-span">Used</span></h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 col-md-3 col-lg-3 text-end subleft">
+                      <div class="row" style="height: 100%;">
+                        <div class="col-6" style="width: 100%;">
+                          <h5 class="" style="width: 100%;"><a href="" class="size-X-none text-decoration-none text-danger" style="width: 100%;">€150.000</a></h5>
+                        </div>
+                        <div class="col-6" style="width: 100%;">
+                          <a href="#" class="btn btn-secondary border-0">Details</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- step2 end -->
+                <!-- step2 start -->
+                <div class="sectionleftsecond mt-4">
+                  <div class="subsectionleft smallXcreen row justify-content-sm-between">
+                    <div class="col-sm-8 col-md-7 col-lg-9">
+                      <div class="card" style="width: 100%;">
+                        <div class="row smallXcreen row1 justify-content-between">
+                          <div class="col-6 size-sm size-X" style="position: relative;">
+                            <img src="./images/car3.jpg" class="card-img-top" style="width: 105%; height: 100%;" alt="...">
+                            <a href=""><h6 class="head">FEATURED</h6></a>
+                            <!-- Card Icons -->
+                            <div class="icons">
+                              <a href=""><i class="fa fa-camera" aria-hidden="true"></i></a>
+                              <a href=""><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="icons-left">
+                              <a href=""><i class="fa fa-arrows" aria-hidden="true"></i></a>
+                              <a href=""><i class="fa fa-star" aria-hidden="true"></i></a>
+                            </div>
+                          </div>
+                          <div class="col-6 subCardBody">
+                            <div class="card-body">
+                              <div class="card-body-text">
+                                <a href="" class="text-decoration-none text-dark"><h5 class="card-title">Lexus LFA '2014 </h5></a>
+                                <h5 class="" style="width: 100%;"><a href="" class="size-X-price text-decoration-none text-danger" style="width: 100%; display: none;">€150.000</a></h5>
+                                <h6 class="fs-6">Location: <span class="card-span">Germany/Berlin</span></h6>
+                                <h6 class="">Engine: <span class="card-span">6.5cm LP, Petrol</span></h6>
+                                <h6 class="">Kilometer: <span class="card-span">3000km</span></h6>
+                                <h6 class="">Condition: <span class="card-span">Used</span></h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 col-md-3 col-lg-3 text-end subleft">
+                      <div class="row" style="height: 100%;">
+                        <div class="col-6" style="width: 100%;">
+                          <h5 class="" style="width: 100%;"><a href="" class="size-X-none text-decoration-none text-danger" style="width: 100%;">€150.000</a></h5>
+                        </div>
+                        <div class="col-6" style="width: 100%;">
+                          <a href="#" class="btn btn-secondary border-0">Details</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- step2 end -->
+                <!-- step2 start -->
+                <div class="sectionleftsecond mt-4">
+                  <div class="subsectionleft smallXcreen row justify-content-sm-between">
+                    <div class="col-sm-8 col-md-7 col-lg-9">
+                      <div class="card" style="width: 100%;">
+                        <div class="row smallXcreen row1 justify-content-between">
+                          <div class="col-6 size-sm size-X" style="position: relative;">
+                            <img src="./images/car3.jpg" class="card-img-top" style="width: 105%; height: 100%;" alt="...">
+                            <a href=""><h6 class="head">FEATURED</h6></a>
+                            <!-- Card Icons -->
+                            <div class="icons">
+                              <a href=""><i class="fa fa-camera" aria-hidden="true"></i></a>
+                              <a href=""><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="icons-left">
+                              <a href=""><i class="fa fa-arrows" aria-hidden="true"></i></a>
+                              <a href=""><i class="fa fa-star" aria-hidden="true"></i></a>
+                            </div>
+                          </div>
+                          <div class="col-6 subCardBody">
+                            <div class="card-body">
+                              <div class="card-body-text">
+                                <a href="" class="text-decoration-none text-dark"><h5 class="card-title">Lexus LFA '2014 </h5></a>
+                                <h5 class="" style="width: 100%;"><a href="" class="size-X-price text-decoration-none text-danger" style="width: 100%; display: none;">€150.000</a></h5>
+                                <h6 class="fs-6">Location: <span class="card-span">Germany/Berlin</span></h6>
+                                <h6 class="">Engine: <span class="card-span">6.5cm LP, Petrol</span></h6>
+                                <h6 class="">Kilometer: <span class="card-span">3000km</span></h6>
+                                <h6 class="">Condition: <span class="card-span">Used</span></h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 col-md-3 col-lg-3 text-end subleft">
+                      <div class="row" style="height: 100%;">
+                        <div class="col-6" style="width: 100%;">
+                          <h5 class="" style="width: 100%;"><a href="" class="size-X-none text-decoration-none text-danger" style="width: 100%;">€150.000</a></h5>
+                        </div>
+                        <div class="col-6" style="width: 100%;">
+                          <a href="#" class="btn btn-secondary border-0">Details</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- step2 end -->
+                
+                <!-- step2 start -->
+                <div class="sectionleftsecond mt-4">
+                  <div class="subsectionleft smallXcreen row justify-content-sm-between">
+                    <div class="col-sm-8 col-md-7 col-lg-9">
+                      <div class="card" style="width: 100%;">
+                        <div class="row smallXcreen row1 justify-content-between">
+                          <div class="col-6 size-sm size-X" style="position: relative;">
+                            <img src="./images/car3.jpg" class="card-img-top" style="width: 105%; height: 100%;" alt="...">
+                            <a href=""><h6 class="head">FEATURED</h6></a>
+                            <!-- Card Icons -->
+                            <div class="icons">
+                              <a href=""><i class="fa fa-camera" aria-hidden="true"></i></a>
+                              <a href=""><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="icons-left">
+                              <a href=""><i class="fa fa-arrows" aria-hidden="true"></i></a>
+                              <a href=""><i class="fa fa-star" aria-hidden="true"></i></a>
+                            </div>
+                          </div>
+                          <div class="col-6 subCardBody">
+                            <div class="card-body">
+                              <div class="card-body-text">
+                                <a href="" class="text-decoration-none text-dark"><h5 class="card-title">Lexus LFA '2014 </h5></a>
+                                <h5 class="" style="width: 100%;"><a href="" class="size-X-price text-decoration-none text-danger" style="width: 100%; display: none;">€150.000</a></h5>
+                                <h6 class="fs-6">Location: <span class="card-span">Germany/Berlin</span></h6>
+                                <h6 class="">Engine: <span class="card-span">6.5cm LP, Petrol</span></h6>
+                                <h6 class="">Kilometer: <span class="card-span">3000km</span></h6>
+                                <h6 class="">Condition: <span class="card-span">Used</span></h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 col-md-3 col-lg-3 text-end subleft">
+                      <div class="row" style="height: 100%;">
+                        <div class="col-6" style="width: 100%;">
+                          <h5 class="" style="width: 100%;"><a href="" class="size-X-none text-decoration-none text-danger" style="width: 100%;">€150.000</a></h5>
+                        </div>
+                        <div class="col-6" style="width: 100%;">
+                          <a href="#" class="btn btn-secondary border-0">Details</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- step2 end -->
+              </div>
+              
+              
+
+          </div>
+          <div class="sectionRight mt-md-5 mt-lg-0 recently-xs" style="height: 100%;">
+            <div class="sectionRightHeader border-1 border-bottom border-secondary recently-xs">
+              <h3 class="text-danger">Recently <span class="text-secondary">Added Cars</span></h3>
+            </div>
+            <div class="sectionRightitem1 mt-3 text-center border-bottom border-1 border-secondary pb-5" style="width: 100%;">
+              <div class="row justify-content-center" style="width: 100%; margin: auto;">
+                <div class="col-4 subright border-end border-1 border-white">
+                  <h6 class="p-3 bg-dark text-white">Within<br>hour</h>
+                  <h6 class="number p-2 bg-light text-center text-danger">0</h6>
+                </div>
+                <div class="col-4 subright border-end border-1 border-white">
+                  <h6 class="p-3 bg-dark text-white">Within<br>hour</h>
+                  <h6 class="number p-2 bg-light text-center text-danger">0</h6>
+                </div>
+                <div class="col-4 subright border-end border-1 border-white">
+                  <h6 class="p-3 bg-dark text-white">Within<br>hour</h>
+                  <h6 class="number p-2 bg-light text-center text-danger">0</h6>
+                </div>
+              </div>
+            </div>
+            <!-- sectionRight Car reviews listing -->
+
+            <!-- car reviews1 start -->
+            <div class="row mt-4">
+              <div class="card" style="width: 100%; height: 100%;">
+                <div class="row justify-content-between">
+                  <div class="col-6" style="position: relative;">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/ornelng-35893.appspot.com/o/Images%2F2019%20Rolls%20Royce%2Fimg4.jpg?alt=media&token=6855e9be-7d9d-4525-9a5b-7124939c8631" class="card-img-top" style="width: 100%;" alt="img.jpg">
+                   
+                    <!-- Card Icons -->
+                    
+                  </div>
+                  <div class="col-6 subCardBody">
+                    <div class="card-body">
+                      <div class="card-body-text2" style="width: 100%;">
+                        <a href="" class="text-decoration-none text-dark"><h5 class="card-title fs-6">2019 ROLLS ROYCE PHANTOM...</h5></a>
+                        <a class="text-danger text-decoration-none fs-0">
+                          <i class="fa fa-calendar me-1" aria-hidden="true"></i>
+                          <span style="font-size: 11px;">2019 FACTORY BRAND NEW</span>
+                        </a>
+                        <p class="" style="font-size: 12px;">Fully equipped <a href="" class="text-decoration-none text-danger ms-5"><span><i class="fa fa-comment-o me-2" aria-hidden="true"></i>3</span></a>
+                          <span>with all required standard features, Automatic transmission, Thumb Start, Navigation System with Backup Camera, Multi-functional Power Steering, all round Airbags, Hi Tech sound system, Leather Interior, etc.</span>
+                        </p>
+                        
+                      </div>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- car review1 end -->
+
+            <!-- car review2 start -->
+
+            <section1 class="carRandomReview mt-5">
+              <div class="sectionRightHeader border-1 border-bottom border-secondary pt-md-5">
+                <h3 class="text-danger">Random <span class="text-secondary"> Cars</span></h3>
+              </div>
+
+              <section1 class="row mt-4">
+                <div class="card" style="width: 100%;">
+                  <div class="row justify-content-between">
+                    <% for (var i=0; i<cars.length-10; i++) { %> 
+                      <div class="col-6 mt-4" style="position: relative;">
+                        <img src="<%= cars[i].carImage3 %> " class="card-img-top random" style="width: 100%;" alt="img.jpg">
+                       
+                        <!-- Card Icons -->
+                        
+                      </div>
+                      <div class="col-6 subCardBody mt-4">
+                        <div class="card-body">
+                          <div class="card-body-text2" style="width: 100%;">
+                            <a href="" class="text-decoration-none text-dark"><h5 class="card-title" style="font-size: 13px;"><%= cars[i].carName %> </h5></a>
+                            
+                            <p class="text-danger fs-6">Price: <%= cars[i].carPrice%> </p>
+                          </div>
+                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                      </div>
+                    <% } %> 
+                  </div>
+              </div>
+
+            </section1>
+            
+            <!-- car review2 end -->
+
+            <!-- car review3 start -->
+            <div class="carDealerReview mt-5">
+              <div class="sectionRightHeader border-1 border-bottom border-secondary">
+                <h3 class="text-danger">Company's <span class="text-secondary"> Info</span></h3>
+              </div>
+
+              <div class="row mt-4">
+                <div class="card" style="width: 100%;">
+                  <div class="row justify-content-between">
+                    <div class="col-6" style="position: relative;">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/ornelng-35893.appspot.com/o/Images%2F2021%20Toyota%20Avalon%2Fimg1.jpg?alt=media&token=7342ee77-d1f5-4878-af7b-16705acd39f3" class="card-img-top rounded-circle" style="width: 100%;" alt="img.jpg">
+                     
+                      <!-- Card Icons -->
+                      
+                    </div>
+                    <div class="col-6 subCardBody">
+                      <div class="card-body">
+                        <div class="card-body-text2" style="width: 100%;">
+                          <a href="" class="text-decoration-none text-danger"><h5 class="card-title">OrnelNg</h5></a>
+                          <p class="text-secondary">De Numez Ornel Nig. Ltd is a fully owned indigenous Nigerian company registered with
+                            the Nigeria Corporate Affairs</p>
+                        </div>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- car review3 end -->
+            <!-- list-text -->
+            <div class="listText mt-3">
+              <p class="text-secondary"><i class="fa fa-phone me-2" aria-hidden="true"></i><span>+2347067903042</span></p>
+              <p class="text-secondary"><i class="fa fa-superpowers me-2" aria-hidden="true"></i><span>De Numez Ornel Nig. Ltd</span></p>
+              <p class="text-secondary"><i class="fa fa-home me-2" aria-hidden="true"></i><span>12 Street, Los Angeles, CA, 94101</span></p>
+            </div>
+
+          </div>
+        </section1>
+      </div>
+      <!-- Section1 End -->
+
+      <!-- section2 Start -->
+
+     <%- include('./partials/footer.ejs') %> 
+      <!-- Section2 End -->
+    </div>
+  
+    <script src="/script/main.js"></script>
+</body>
+</html>
