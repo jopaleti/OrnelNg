@@ -416,6 +416,14 @@ footer{
         /* margin-bottom: 50px; */
     }
 }
+@media (max-width: 767px) {
+    .carsContainer > .row > div > .card {
+        height: unset !important;
+    }
+    .carsContainer > .row > div > .card > .card-body > .card-body-text {
+        height: unset !important;
+    }
+}
 @media screen and (min-width: 700px){
     .carousel-caption h1 {
         font-size: 70px !important;
