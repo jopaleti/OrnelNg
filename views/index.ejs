@@ -9,7 +9,7 @@
           <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="https://firebasestorage.googleapis.com/v0/b/ornelng-35893.appspot.com/o/Images%2F2021%20Toyota%20Avalon%2Fimg1.jpg?alt=media&token=7342ee77-d1f5-4878-af7b-16705acd39f3" class="d-block w-100" alt="img.jpg" style="height: 100%;">
+                  <img src="./images/toy2.jpeg" class="d-block w-100" alt="img.jpg" style="height: 100%; object-fit: cover; object-position: center;">
                   <div class="x-1 carousel-caption d-md-block">
                       <h1 class="fs-1 ps-4">Welcome To OrnelNg Motors!</h1>
                       <h2 class="fs-1 ps-4 text-danger pt-5">It's Nice To Have You Here</h2>
@@ -17,7 +17,7 @@
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="https://firebasestorage.googleapis.com/v0/b/ornelng-35893.appspot.com/o/Images%2F2020%20Wrangler%2Fimg1.jpg?alt=media&token=7db541a4-04c5-4708-8bd4-68204a32f772" class="d-block w-100" alt="img.jpg" style="height: 100%;">
+                  <img src="./images/toy1.jpeg" class="d-block w-100" alt="img.jpg" style="height: 100%; object-fit: cover; object-position: center;">
                   <div class="carousel-caption x-p d-md-block">
                     <div class="slideLeft">
                       <h1>Check Our Best Product</h1>
@@ -26,7 +26,7 @@
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="https://firebasestorage.googleapis.com/v0/b/ornelng-35893.appspot.com/o/Images%2F2019%20Rolls%20Royce%2Fimg5.jpg?alt=media&token=bc9488f2-cbad-4883-8bb3-bce18b9661df" class="d-block w-100" alt="img.jpg" style="height: 100%;">
+                  <img src="./images/toy.jpeg" class="d-block w-100" alt="img.jpg" style="height: 100%; object-fit: cover; object-position: center;">
                   <div class="carousel-caption x-2 d-md-block">
                       <div class="slideRight">
                           <h1>We Offer Standard Services</h1>
@@ -79,9 +79,9 @@
                     <div class="collapse navbar-collapse" id="navbarNavAlt">
                       <div class="navbar-nav ms-auto">
                         <a class="nav-link fw-bolder text-white active" aria-current="page" href="/">Home</a>
-                        <a class="nav-link fw-bolder text-white disabled" href="#">Car Mart</a>
+                        <a class="nav-link fw-bolder text-white disabled" href="#" style="cursor: not-allowed;">Car Mart</a>
                         <a class="nav-link fw-bolder text-white" href="#products" tabindex="-1" aria-disabled="true">Property Pool</a>
-                        <a class="nav-link fw-bolder text-white active" aria-current="page" href="#">Blog</a>
+                        <a class="nav-link fw-bolder text-white disabled" aria-current="page" href="#" style="cursor: not-allowed;">Blog</a>
                         <a class="nav-link fw-bolder text-white" href="#contact">Contact Us</a>
                       </div>
                     </div>
@@ -109,28 +109,28 @@
                           <div class="card" style="width: 100%; height: 100%;">
                                   <div class="image-top " style="height: 35%;">
                                           <a href="/Ornel/<%= car._id %> "><img src="<%= car.carImage1 %> " class="card-img-top randImage" alt="img.jpg" style="height: 100% !important; object-fit: cover; object-position: center;"></a>
-                                          <a style="cursor: pointer;"><h6 class="head randSelector">FEATURED</h6></a>
+                                          <a href="/Ornel/<%= car._id %>" style="cursor: pointer;"><h6 class="head randSelector">FEATURED</h6></a>
                                           <!-- Card Icons -->
                                           <div class="icons">
-                                              <a href=""><i class="fa fa-camera" aria-hidden="true"></i></a>
-                                              <a href=""><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+                                              <a><i class="fa fa-camera" aria-hidden="true"></i></a>
+                                              <a><i class="fa fa-video-camera" aria-hidden="true"></i></a>
                                           </div>
                                           <div class="icons-left">
-                                              <a href=""><i class="fa fa-arrows" aria-hidden="true"></i></a>
-                                              <a href=""><i class="fa fa-star" aria-hidden="true"></i></a>
+                                              <a><i class="fa fa-arrows" aria-hidden="true"></i></a>
+                                              <a><i class="fa fa-star" aria-hidden="true"></i></a>
                                           </div>
                                   </div>
                           
                                   <div class="card-body" style="height: 65%;">
                                       <div style="height: 100%;">
                                         <div style="height: 30%;">
-                                          <a href="" class="text-decoration-none text-dark"><h5 class="card-title" style="font-size: 15px !important;"><%= car.carName %> </h5></a>
-                                          <a href="" class="text-decoration-none"><h5 class="text-danger">Price: <%= car.carPrice %> </h5></a>
+                                          <a href="/Ornel/<%= car._id %>" class="text-decoration-none text-dark"><h5 class="card-title" style="font-size: 15px !important;"><%= car.carName %> </h5></a>
+                                          <a class="text-decoration-none"><h5 class="text-danger">Price: <%= car.carPrice %> </h5></a>
                                         </div>
                                         <div class="card-body-text">
                                             <p style="font-size: 12px;"><%= car.carDescription %> </p>
                                         </div>
-                                        <a href="#" class="btn btn-secondary border-0">Details</a>
+                                        <a href="/Ornel/<%= car._id %>" class="btn btn-secondary border-0">Details</a>
                                       </div>
                                   </div>
                           </div>
@@ -147,239 +147,50 @@
               <div class="section2left">
                 <div class="sectionleftsecond mt-4">
                   <div class="subsectionleft smallXcreen row justify-content-sm-between">
-                    <div class="col-sm-8 col-md-7 col-lg-9">
-                      <div class="card" style="width: 100%;">
-                        <div class="row smallXcreen row1 justify-content-between">
-                          <div class="col-6 size-sm size-X" style="position: relative;">
-                            <img src="./images/car3.jpg" class="card-img-top img-xs" style="width: 105%; height: 100%;" alt="...">
-                            <a href=""><h6 class="head">FEATURED</h6></a>
-                            <!-- Card Icons -->
-                            <div class="icons">
-                              <a href=""><i class="fa fa-camera" aria-hidden="true"></i></a>
-                              <a href=""><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+                    <% cars.forEach(car => { %> 
+                      <div class="col-sm-8 col-md-7 col-lg-9 mb-3" style="width: 82%; padding: 0 !important;">
+                        <div class="card" style="width: 100%; height: 220px;">
+                          <div class="row smallXcreen row1 justify-content-between" style="height: 220px;">
+                            <div class="col-6 size-sm size-X" style="position: relative; height: 100%; width: 50%;">
+                              <img src="<%= car.carImage1 %> " class="card-img-top img-xs" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" alt="...">
+                              <a href="/Ornel/<%= car._id %> "><h6 class="head">FEATURED</h6></a>
+                              <!-- Card Icons -->
+                              <div class="icons">
+                                <a><i class="fa fa-camera me-1" aria-hidden="true"></i></a>
+                                <a><i class="fa fa-video-camera me-2" aria-hidden="true"></i></a>
+                              </div>
+                              <div class="icons-left">
+                                <a><i class="fa fa-arrows" aria-hidden="true"></i></a>
+                                <a><i class="fa fa-star" aria-hidden="true"></i></a>
+                              </div>
                             </div>
-                            <div class="icons-left">
-                              <a href=""><i class="fa fa-arrows" aria-hidden="true"></i></a>
-                              <a href=""><i class="fa fa-star" aria-hidden="true"></i></a>
-                            </div>
-                          </div>
-                          <div class="col-6 subCardBody">
-                            <div class="card-body">
-                              <div class="card-body-text">
-                                <a href="" class="text-decoration-none text-dark"><h5 class="card-title">Lexus LFA '2014 </h5></a>
-                                <h5 class="" style="width: 100%;"><a href="" class="size-X-price text-decoration-none text-danger" style="width: 100%; display: none;">€150.000</a></h5>
-                                <h6 class="fs-6">Location: <span class="card-span">Germany/Berlin</span></h6>
-                                <h6 class="">Engine: <span class="card-span">6.5cm LP, Petrol</span></h6>
-                                <h6 class="">Kilometer: <span class="card-span">3000km</span></h6>
-                                <h6 class="">Condition: <span class="card-span">Used</span></h6>
+                            <div class="col-6 subCardBody" style="height: 210px; overflow: auto; scrollbar-width: none;">
+                              <div class="card-body">
+                                <div class="card-body-text" style="height: 100%;">
+                                  <a class="text-decoration-none text-dark"><h5 class="card-title" style="font-size: 15px !important;"><%= car.carName %> </h5></a>
+                                  <h5 class="" style="width: 100%;"><a href="" class="size-X-price text-decoration-none text-danger" style="width: 100%; display: none;">Price: <%= car.carPrice%> </a></h5>
+                                  <p style="font-size: 12px;"><%= car.carDescription %> </p>
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-lg-3 text-end subleft">
-                      <div class="row" style="height: 100%;">
-                        <div class="col-6" style="width: 100%;">
-                          <h5 class="" style="width: 100%;"><a href="" class="size-X-none text-decoration-none text-danger" style="width: 100%;">€150.000</a></h5>
-                        </div>
-                        <div class="col-6" style="width: 100%;">
-                          <a href="#" class="btn btn-secondary border-0">Details</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- step2 end -->
-                <!-- step2 start -->
-                <div class="sectionleftsecond mt-4">
-                  <div class="subsectionleft smallXcreen row justify-content-sm-between">
-                    <div class="col-sm-8 col-md-7 col-lg-9">
-                      <div class="card" style="width: 100%;">
-                        <div class="row smallXcreen row1 justify-content-between">
-                          <div class="col-6 size-sm size-X" style="position: relative;">
-                            <img src="./images/car3.jpg" class="card-img-top img-xs" style="width: 105%; height: 100%;" alt="...">
-                            <a href=""><h6 class="head">FEATURED</h6></a>
-                            <!-- Card Icons -->
-                            <div class="icons">
-                              <a href=""><i class="fa fa-camera" aria-hidden="true"></i></a>
-                              <a href=""><i class="fa fa-video-camera" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="icons-left">
-                              <a href=""><i class="fa fa-arrows" aria-hidden="true"></i></a>
-                              <a href=""><i class="fa fa-star" aria-hidden="true"></i></a>
-                            </div>
+                      <div class="col-sm-4 col-md-3 col-lg-3 text-end subleft" style="padding: 0px; width: 15%; height: 150px;">
+                        <div class="row" style="height: 100%;">
+                          <div class="col-6" style="width: 100%;">
+                            <h5 class="" style="width: 100%;"><a class="size-X-none text-decoration-none text-danger" style="width: 100%;">Price: <%= car.carPrice%> </a></h5>
                           </div>
-                          <div class="col-6 subCardBody">
-                            <div class="card-body">
-                              <div class="card-body-text">
-                                <a href="" class="text-decoration-none text-dark"><h5 class="card-title">Lexus LFA '2014 </h5></a>
-                                <h5 class="" style="width: 100%;"><a href="" class="size-X-price text-decoration-none text-danger" style="width: 100%; display: none;">€150.000</a></h5>
-                                <h6 class="fs-6">Location: <span class="card-span">Germany/Berlin</span></h6>
-                                <h6 class="">Engine: <span class="card-span">6.5cm LP, Petrol</span></h6>
-                                <h6 class="">Kilometer: <span class="card-span">3000km</span></h6>
-                                <h6 class="">Condition: <span class="card-span">Used</span></h6>
-                              </div>
-                            </div>
+                          <div class="col-6" style="width: 100%;">
+                            <a href="/Ornel/<%= car._id %>" class="btn btn-secondary border-0">Details</a>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-lg-3 text-end subleft">
-                      <div class="row" style="height: 100%;">
-                        <div class="col-6" style="width: 100%;">
-                          <h5 class="" style="width: 100%;"><a href="" class="size-X-none text-decoration-none text-danger" style="width: 100%;">€150.000</a></h5>
-                        </div>
-                        <div class="col-6" style="width: 100%;">
-                          <a href="#" class="btn btn-secondary border-0">Details</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- step2 end -->
-                <!-- step2 start -->
-                <div class="sectionleftsecond mt-4">
-                  <div class="subsectionleft smallXcreen row justify-content-sm-between">
-                    <div class="col-sm-8 col-md-7 col-lg-9">
-                      <div class="card" style="width: 100%;">
-                        <div class="row smallXcreen row1 justify-content-between">
-                          <div class="col-6 size-sm size-X" style="position: relative;">
-                            <img src="./images/car3.jpg" class="card-img-top" style="width: 105%; height: 100%;" alt="...">
-                            <a href=""><h6 class="head">FEATURED</h6></a>
-                            <!-- Card Icons -->
-                            <div class="icons">
-                              <a href=""><i class="fa fa-camera" aria-hidden="true"></i></a>
-                              <a href=""><i class="fa fa-video-camera" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="icons-left">
-                              <a href=""><i class="fa fa-arrows" aria-hidden="true"></i></a>
-                              <a href=""><i class="fa fa-star" aria-hidden="true"></i></a>
-                            </div>
-                          </div>
-                          <div class="col-6 subCardBody">
-                            <div class="card-body">
-                              <div class="card-body-text">
-                                <a href="" class="text-decoration-none text-dark"><h5 class="card-title">Lexus LFA '2014 </h5></a>
-                                <h5 class="" style="width: 100%;"><a href="" class="size-X-price text-decoration-none text-danger" style="width: 100%; display: none;">€150.000</a></h5>
-                                <h6 class="fs-6">Location: <span class="card-span">Germany/Berlin</span></h6>
-                                <h6 class="">Engine: <span class="card-span">6.5cm LP, Petrol</span></h6>
-                                <h6 class="">Kilometer: <span class="card-span">3000km</span></h6>
-                                <h6 class="">Condition: <span class="card-span">Used</span></h6>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-lg-3 text-end subleft">
-                      <div class="row" style="height: 100%;">
-                        <div class="col-6" style="width: 100%;">
-                          <h5 class="" style="width: 100%;"><a href="" class="size-X-none text-decoration-none text-danger" style="width: 100%;">€150.000</a></h5>
-                        </div>
-                        <div class="col-6" style="width: 100%;">
-                          <a href="#" class="btn btn-secondary border-0">Details</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- step2 end -->
-                <!-- step2 start -->
-                <div class="sectionleftsecond mt-4">
-                  <div class="subsectionleft smallXcreen row justify-content-sm-between">
-                    <div class="col-sm-8 col-md-7 col-lg-9">
-                      <div class="card" style="width: 100%;">
-                        <div class="row smallXcreen row1 justify-content-between">
-                          <div class="col-6 size-sm size-X" style="position: relative;">
-                            <img src="./images/car3.jpg" class="card-img-top" style="width: 105%; height: 100%;" alt="...">
-                            <a href=""><h6 class="head">FEATURED</h6></a>
-                            <!-- Card Icons -->
-                            <div class="icons">
-                              <a href=""><i class="fa fa-camera" aria-hidden="true"></i></a>
-                              <a href=""><i class="fa fa-video-camera" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="icons-left">
-                              <a href=""><i class="fa fa-arrows" aria-hidden="true"></i></a>
-                              <a href=""><i class="fa fa-star" aria-hidden="true"></i></a>
-                            </div>
-                          </div>
-                          <div class="col-6 subCardBody">
-                            <div class="card-body">
-                              <div class="card-body-text">
-                                <a href="" class="text-decoration-none text-dark"><h5 class="card-title">Lexus LFA '2014 </h5></a>
-                                <h5 class="" style="width: 100%;"><a href="" class="size-X-price text-decoration-none text-danger" style="width: 100%; display: none;">€150.000</a></h5>
-                                <h6 class="fs-6">Location: <span class="card-span">Germany/Berlin</span></h6>
-                                <h6 class="">Engine: <span class="card-span">6.5cm LP, Petrol</span></h6>
-                                <h6 class="">Kilometer: <span class="card-span">3000km</span></h6>
-                                <h6 class="">Condition: <span class="card-span">Used</span></h6>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-lg-3 text-end subleft">
-                      <div class="row" style="height: 100%;">
-                        <div class="col-6" style="width: 100%;">
-                          <h5 class="" style="width: 100%;"><a href="" class="size-X-none text-decoration-none text-danger" style="width: 100%;">€150.000</a></h5>
-                        </div>
-                        <div class="col-6" style="width: 100%;">
-                          <a href="#" class="btn btn-secondary border-0">Details</a>
-                        </div>
-                      </div>
-                    </div>
+                  <% }) %> 
                   </div>
                 </div>
                 <!-- step2 end -->
                 
-                <!-- step2 start -->
-                <div class="sectionleftsecond mt-4">
-                  <div class="subsectionleft smallXcreen row justify-content-sm-between">
-                    <div class="col-sm-8 col-md-7 col-lg-9">
-                      <div class="card" style="width: 100%;">
-                        <div class="row smallXcreen row1 justify-content-between">
-                          <div class="col-6 size-sm size-X" style="position: relative;">
-                            <img src="./images/car3.jpg" class="card-img-top" style="width: 105%; height: 100%;" alt="...">
-                            <a href=""><h6 class="head">FEATURED</h6></a>
-                            <!-- Card Icons -->
-                            <div class="icons">
-                              <a href=""><i class="fa fa-camera" aria-hidden="true"></i></a>
-                              <a href=""><i class="fa fa-video-camera" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="icons-left">
-                              <a href=""><i class="fa fa-arrows" aria-hidden="true"></i></a>
-                              <a href=""><i class="fa fa-star" aria-hidden="true"></i></a>
-                            </div>
-                          </div>
-                          <div class="col-6 subCardBody">
-                            <div class="card-body">
-                              <div class="card-body-text">
-                                <a href="" class="text-decoration-none text-dark"><h5 class="card-title">Lexus LFA '2014 </h5></a>
-                                <h5 class="" style="width: 100%;"><a href="" class="size-X-price text-decoration-none text-danger" style="width: 100%; display: none;">€150.000</a></h5>
-                                <h6 class="fs-6">Location: <span class="card-span">Germany/Berlin</span></h6>
-                                <h6 class="">Engine: <span class="card-span">6.5cm LP, Petrol</span></h6>
-                                <h6 class="">Kilometer: <span class="card-span">3000km</span></h6>
-                                <h6 class="">Condition: <span class="card-span">Used</span></h6>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-lg-3 text-end subleft">
-                      <div class="row" style="height: 100%;">
-                        <div class="col-6" style="width: 100%;">
-                          <h5 class="" style="width: 100%;"><a href="" class="size-X-none text-decoration-none text-danger" style="width: 100%;">€150.000</a></h5>
-                        </div>
-                        <div class="col-6" style="width: 100%;">
-                          <a href="#" class="btn btn-secondary border-0">Details</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- step2 end -->
               </div>
               
               

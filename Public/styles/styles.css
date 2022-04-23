@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 html, body {
-    overflow-x:hidden 
+    overflow-x: hidden;
 }
 
 
@@ -370,7 +371,15 @@ footer{
 } */
 
 /* @medium screen size */
-@media screen and (max-width: 992px){
+@media (min-width: 991.5px){
+    .feature-desc {
+        height: 70vh !important;
+    }
+    /* .desc-col-2 {
+        margin-top: unset ;
+    } */
+}
+@media screen and (max-width: 991.5px){
     /* navbar */
     .navtop {
         max-width: 90% !important;
@@ -397,6 +406,9 @@ footer{
     .navbar_2 {
         width: 100% !important;
     }
+    .desc-col-2 {
+        margin-top: -20% !important;
+    }
 }
 /* max-width: 768px */
 @media screen and (max-width: 768px) {
@@ -415,15 +427,27 @@ footer{
         width: auto;
         /* margin-bottom: 50px; */
     }
+    .desc-col-2 {
+        margin-top: -24% !important;
+    }
 }
 @media (max-width: 767px) {
     .carsContainer > .row > div > .card {
         height: unset !important;
     }
     .carsContainer > .row > div > .card > .card-body > .card-body-text {
-        height: unset !important;
+        height: unset;
+    }
+    .desc-col-2 {
+        margin-top: -24% !important;
     }
 }
+@media (max-width: 700px) {
+    .desc-col-2 {
+        margin-top: -26% !important;
+    }
+}
+
 @media screen and (min-width: 700px){
     .carousel-caption h1 {
         font-size: 70px !important;
@@ -434,6 +458,12 @@ footer{
         font-weight: 600 !important;
     }
 }
+@media (max-width: 580px) {
+    .desc-col-2 {
+        margin-top: -30% !important;
+    }
+}
+
 @media screen and (min-width: 580px){
     .carousel-caption h1 {
         font-size: 50px !important;
@@ -514,8 +544,26 @@ footer{
     .x-p {
         bottom: 10% !important;
     }
+    .desc-col-2 {
+        margin-top: -34% !important;
+    }
+}
+@media (max-width: 500px) {
+    .desc-col-2 {
+        margin-top: -36% !important;
+    }
+}
+@media (max-width: 450px) {
+    .desc-col-2 {
+        margin-top: -41% !important;
+    }
 }
 
+@media (max-width: 410px) {
+    .desc-col-2 {
+        margin-top: -44% !important;
+    }
+}
 /* max-width 387px */
 @media screen and (max-width: 387px){
     .navtop-sm {
