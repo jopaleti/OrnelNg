@@ -578,7 +578,7 @@ footer{
 }
 @media (max-width: 538px) {
     .navTopHead {
-        height: 16vh !important;
+        height: 17vh !important;
     }
     .desc-col-2 {
         margin-top: -46% !important;
