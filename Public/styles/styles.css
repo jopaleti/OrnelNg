@@ -553,9 +553,22 @@ footer{
         margin-top: -36% !important;
     }
 }
-@media (max-width: 450px) {
+@media (max-width: 470px){
+    .feature-desc {
+        margin-top: -20px !important;
+    }
+    .desc-col-2 {
+        margin-top: -43% !important;
+    }
+}
+/* @media (max-width: 450px) {
     .desc-col-2 {
         margin-top: -41% !important;
+    }
+} */
+@media (max-width: 430px) {
+    .desc-col-2 {
+        margin-top: -45% !important;
     }
 }
 
