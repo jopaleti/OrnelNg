@@ -444,6 +444,14 @@ footer{
         margin-top: 0 !important;
     }
 }
+@media (max-width: 722px) {
+    .navTopHead {
+        height: 21vh !important;
+    }
+    .desc-col-2 {
+        margin-top: -29% !important;
+    }
+}
 @media (max-width: 700px) {
     .desc-col-2 {
         margin-top: -28% !important;
@@ -460,12 +468,24 @@ footer{
         font-weight: 600 !important;
     }
 }
+@media (max-width: 685px){
+    .desc-col-2 {
+        margin-top: -30% !important;
+    }
+}
+
+@media (max-width: 638px){
+    .desc-col-2 {
+        margin-top: -32% !important;
+    }
+}
+
 @media (max-width: 590px) {
     .desc-col-2 {
         margin-top: -33% !important;
     }
     .navTopHead {
-        height: 20vh !important;
+        height: 21vh !important;
     }
 }
 
