@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 html, body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
-
 
 * {
     padding: 0;
@@ -439,12 +438,10 @@ footer{
         height: unset;
     }
     .desc-col-2 {
-        margin-top: -27% !important;
+        margin-top: -25% !important;
     }
     .feature-desc {
-        margin-top: -24px !important;
-        width: 100% !important;
-        padding: 0 !important;
+        margin-top: 0 !important;
     }
 }
 @media (max-width: 700px) {
@@ -463,9 +460,12 @@ footer{
         font-weight: 600 !important;
     }
 }
-@media (max-width: 580px) {
+@media (max-width: 590px) {
     .desc-col-2 {
-        margin-top: -30% !important;
+        margin-top: -33% !important;
+    }
+    .navTopHead {
+        height: 20vh !important;
     }
 }
 
@@ -553,17 +553,20 @@ footer{
         margin-top: -34% !important;
     }
 }
+@media (max-width: 538px) {
+    .desc-col-2 {
+        margin-top: -37% !important;
+    }
+}
+
 @media (max-width: 500px) {
     .desc-col-2 {
-        margin-top: -36% !important;
+        margin-top: -38% !important;
     }
 }
 @media (max-width: 470px){
-    .feature-desc {
-        margin-top: -20px !important;
-    }
     .desc-col-2 {
-        margin-top: -43% !important;
+        margin-top: -42% !important;
     }
 }
 /* @media (max-width: 450px) {
@@ -582,6 +585,11 @@ footer{
         margin-top: -44% !important;
     }
 }
+@media (max-width: 392px){
+    .desc-col-2 {
+        margin-top: -50% !important;
+    }
+}
 /* max-width 387px */
 @media screen and (max-width: 387px){
     .navtop-sm {
@@ -597,6 +605,28 @@ footer{
     }
     .slideLeft {
         bottom: 10% !important;
+    }
+}
+@media (max-width: 370px){
+    .desc-col-2 {
+        margin-top: -53% !important;
+    }
+}
+@media (max-width: 356px){
+    .desc-col-2 {
+        margin-top: -55% !important;
+    }
+}
+
+@media (max-width: 340px){
+    .desc-col-2 {
+        margin-top: -57% !important;
+    }
+}
+
+@media (max-width: 328px){
+    .desc-col-2 {
+        margin-top: -59% !important;
     }
 }
 
