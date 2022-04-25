@@ -149,9 +149,9 @@
                   <div class="subsectionleft smallXcreen row justify-content-sm-between">
                     <% cars.forEach(car => { %> 
                       <div class="col-sm-8 col-md-7 col-lg-9 mb-3 Cont" style="width: 82%; padding: 0 !important;">
-                        <div class="card" style="width: 100%; height: 220px;">
+                        <div class="card cardX" style="width: 100%; height: 220px;">
                           <div class="row smallXcreen row1 justify-content-between" style="height: 100%;">
-                            <div class="col-6 size-sm size-X" style="position: relative; height: 100%; width: 50%;">
+                            <div class="col-6 size-sm size-X size-X5" style="position: relative; height: 100%; width: 50%;">
                               <img src="<%= car.carImage1 %> " class="card-img-top img-xs" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" alt="...">
                               <a href="/Ornel/<%= car._id %> "><h6 class="head">FEATURED</h6></a>
                               <!-- Card Icons -->
@@ -164,7 +164,7 @@
                                 <a><i class="fa fa-star" aria-hidden="true"></i></a>
                               </div>
                             </div>
-                            <div class="col-6 subCardBody" style="height: 210px; overflow: auto; scrollbar-width: none;">
+                            <div class="col-6 subCardBody subCardBodyX" style="height: 210px; overflow: auto; scrollbar-width: none;">
                               <div class="card-body">
                                 <div class="card-body-text" style="height: 100%;">
                                   <a class="text-decoration-none text-dark"><h5 class="card-title" style="font-size: 15px !important;"><%= car.carName %> </h5></a>
@@ -176,7 +176,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-sm-4 col-md-3 col-lg-3 text-end subleft" style="padding: 0px; width: 15%; height: 150px;">
+                      <div class="col-sm-4 col-md-3 col-lg-3 text-end subleft subleftX" style="padding: 0px; width: 15%; height: 150px;">
                         <div class="row" style="height: 100%;">
                           <div class="col-6" style="width: 100%;">
                             <h5 class="" style="width: 100%;"><a class="size-X-none text-decoration-none text-danger" style="width: 100%;">Price: <%= car.carPrice%> </a></h5>

@@ -578,18 +578,18 @@ footer{
     .Cont {
         width: 100% !important;
     }
-    .size-X {
+    .size-X5 {
         width: 100% !important;
         height: unset !important;
     }
-    .subCardBody {
+    .subCardBodyX {
         width: 100% !important;
         height: unset !important;
     }
-    .card {
+    .cardX {
         height: unset !important;
     }
-    .subleft {
+    .subleftX {
         height: unset !important;
         margin-bottom: 15px !important;
     }
