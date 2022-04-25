@@ -575,10 +575,28 @@ footer{
     .desc-col-2 {
         margin-top: -41% !important;
     }
+    .Cont {
+        width: 100% !important;
+    }
+    .size-X {
+        width: 100% !important;
+        height: unset !important;
+    }
+    .subCardBody {
+        width: 100% !important;
+        height: unset !important;
+    }
+    .card {
+        height: unset !important;
+    }
+    .subleft {
+        height: unset !important;
+        margin-bottom: 15px !important;
+    }
 }
 @media (max-width: 538px) {
     .navTopHead {
-        height: 17vh !important;
+        max-height: 15vh !important;
     }
     .desc-col-2 {
         margin-top: -46% !important;
@@ -632,11 +650,14 @@ footer{
     .slideLeft {
         bottom: 10% !important;
     }
+    .desc-col-2 {
+        margin-top: -55% !important;
+    }
 }
 @media (max-width: 370px){
-    .desc-col-2 {
+    /* .desc-col-2 {
         margin-top: -68% !important;
-    }
+    } */
 }
 @media (max-width: 356px){
     .desc-col-2 {
@@ -687,11 +708,16 @@ body{
 /* Description */
 .feature-desc {
     max-width: 90%;
-    margin: auto;
+    margin: 0 auto;
     height: 100%;
     margin-bottom: 20px !important;
     /* scrollbar-width: none; */
     /* background-color: aquamarine; */
+}
+
+.feature-desc{
+    width: 100%;
+    max-width: unset;
 }
 .desc-col-1 > img {
     width: 100%;
