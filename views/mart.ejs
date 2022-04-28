@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %> 
+<body>
+    <div class="mart_container">
+        <div class="" style="position: sticky !important; top: 0px; z-index: 1000;">
+            <!-- NAVBAR -->
+          <div>
+            <!-- Navbar_1 -->
+            <nav class="navbar navbar-expand-md navbar-light border-bottom border-1 border-secondary">
+                <div class="container navtop">
+                  <div class="navbar-brand">
+                    <a class="navbar-brand nav2 text-white navtop-sm" href="#"><i class="fa fa-user me-2" aria-hidden="true"></i>OrnelNg@gmail.com</a>
+                  </div>
+                  <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars text-white navtop-sm" aria-hidden="true"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                      <a class="nav-link nav2 text-white" href="#"><i class="fa fa-phone me-2" aria-hidden="true"></i>+234 705 720 2968</a>
+                      <a class="nav-link nav2 text-white" href="#"><i class="fa fa-map-marker me-2" aria-hidden="true"></i>23A Adeyemo Alakija Street, Victoria Island, Lagos.</a>
+                      
+                    </div>
+                  </div>
+                </div>
+            </nav>
+  
+            <!-- Navbar_2 -->
+            <nav class="navbar navbar-expand-md navbar-light">
+                <div class="container navtop">
+                  <!-- <a class="navbar-brand" href="#"><h1>ORNELNG</h1></a> -->
+                  <h1 class="logo"><a href="/" class="text-decoration-none text-white">ORNEL<span class="text-danger">NG</span></a></h1>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAlt" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars text-white" aria-hidden="true"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAlt">
+                    <div class="navbar-nav ms-auto">
+                      <a class="nav-link fw-bolder text-white active" aria-current="page" href="/">Home</a>
+                      <a class="nav-link fw-bolder text-white" href="/mart"  style="cursor: pointer;">Car Mart</a>
+                      <a class="nav-link fw-bolder text-white disabled" href="#" tabindex="-1" aria-disabled="true">Property Pool</a>
+                      <a class="nav-link fw-bolder text-white disabled" aria-current="page" href="#"  style="cursor: not-allowed;">Blog</a>
+                      <a class="nav-link fw-bolder text-white" href="#contact">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row g-2">
+                  <% for (var i =1; i<cars.length;  i++ ) { %>
+                      <div class="col-6 col-md-4 col-lg-3 item detail-item" style="position: relative;">
+                        <a href="/mart/<%= cars[i]._id %>" style="width:100%; height: 100%;" >
+                          <img src=<%= cars[i].carImage1 %> class="d-block  w-100" alt="..." style='height: 100%; object-fit: cover; object-position: center;'>
+
+                        </a>
+                        <div class="detail">See Details</div>
+                      </div>
+                    <% } %>
+            </div>
+        </div>
+        <%- include('./partials/footer.ejs') %> 
+    </div>    
+</body>
+</html>

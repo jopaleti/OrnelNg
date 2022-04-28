@@ -7,14 +7,16 @@ var mailer = require("nodemailer");
 var createError = require("http-errors");
 var db = require('./config/dbConfig.js');
 var carModel = require('./models/carModel');
+var carMart = require('./models/carMart');
 const { json } = require("body-parser");
+const { Db } = require("mongodb");
 
 // initiating the database
 db();
 // Configuring our app
 var app = express();
 //Setting Port
-PORT = process.env.PORT || 3001
+PORT = process.env.PORT || 3004
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
@@ -68,6 +70,20 @@ app.get('/feature/:id', async (req, res)=> {
   res.render('features', {title: 'carFeatures', car: car});
 });
 
+// mart router
+app.get('/mart', async(req, res)=>{
+  const mart = await carMart.find(function(err,cars){
+    if(err) console.log(err)
+    res.render('mart', {title: 'Car Mart',cars:cars})
+  })
+})
+
+// desc router
+app.get('/mart/:id', async (req, res)=> {
+  const carId = req.params.id;
+  const car = await carMart.findById(carId);
+  res.render('carMart', {title: 'carMart', car: car});
+});
 // catch 404 and forward to error handler
 // app.use(function (req, res, next) {
 //   next(createError(404));

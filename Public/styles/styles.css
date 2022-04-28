@@ -14,12 +14,18 @@ html, body {
     overflow-x: hidden;
 }
 
-.carousel-item {
+.carousel-itemX {
+    /* height: 70% !important; */
+    /* width: initial !important; */
+    /* position: initial !important; */
+}
+
+.carousel-itemX {
     height: 100vh;
     width: 100%;
     position: relative;
 }
-.carousel-item img {
+.carousel-itemX img {
     position: absolute;
     object-fit: cover !important;
     object-position: center !important;
@@ -329,6 +335,21 @@ color: #fff;
     overflow: unset !important;
 }
 
+.card-body-text::-webkit-scrollbar {
+    display: none;
+}
+.subCardBody::-webkit-scrollbar {
+    overflow-y: scroll;
+    display: none;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.card-body-text {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
 /* footer */
 footer{
     display: block !important;
@@ -349,6 +370,7 @@ footer{
     height: 100%;
     
 }
+
 .flex-row .pb-1 {
     padding: unset !important;
 }
@@ -364,21 +386,14 @@ footer{
     height: 90%;
     width: 100%;
 }
-/* foot */
-/* .mt-sm-4 {
-    margin-top: unset !important;
-} */
-
 /* @medium screen size */
 @media (min-width: 991.5px){
-    .feature-desc {
-        height: 70vh !important;
-    }
-    /* .desc-col-2 {
-        margin-top: unset ;
-    } */
+  
 }
 @media screen and (max-width: 991.5px){
+    /* .col-cal{
+        height: 35vh !important;
+    } */
     /* navbar */
     .navtop {
         max-width: 90% !important;
@@ -453,6 +468,9 @@ footer{
     }
 }
 @media (max-width: 700px) {
+    /* .col-cal{
+        height: 30vh !important;
+    } */
     .desc-col-2 {
         margin-top: -35% !important;
     }
@@ -596,7 +614,7 @@ footer{
 }
 @media (max-width: 538px) {
     .navTopHead {
-        max-height: 15vh !important;
+        max-height: 17vh !important;
     }
     .desc-col-2 {
         margin-top: -46% !important;
@@ -681,39 +699,15 @@ footer{
 body{
     overflow: visible;
 }
-.feature-image {
-    position: relative;
-    height: 60vh;
-    width: 100%;
-}
-.feature-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-.feature-image::before {
-    content: '';
-    position: absolute;
-    background-color: rgba(0,0,0,0.5);
-    inset: 0;
-}
-.feature-image .feature-overlay{
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-}
-/* Description */
-.feature-desc {
+
+/* .feature-desc {
     max-width: 90%;
-    margin: 0 auto;
+    margin: -1.2% auto;
     height: 100%;
     margin-bottom: 20px !important;
-    /* scrollbar-width: none; */
-    /* background-color: aquamarine; */
-}
+    scrollbar-width: none;
+    background-color: aquamarine;
+} */
 
 .feature-desc{
     width: 100%;
@@ -805,5 +799,93 @@ body{
 .scrollPage .fa-arrow-up {
     cursor: pointer;
 }
+/* Remove Scroll */
+
+/* mart styling */
+.row .item > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* desc Styling */
+.row .item > .carousel {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* carousel-indicators */
+.carousel-indicatorsY, .carousel-indicatorsZ {
+    overflow: hidden;
+    display: flex !important;
+    justify-content: space-between !important;
+    margin-right: unset !important;
+    margin-left: unset !important;
+    /* height: 30% !important; */
+    margin-bottom: unset !important;
+    padding-left: unset !important;
+    padding-right: unset !important;
+}
+/* carousel-inner */
+.carousel-innerY, .carousel-innerZ {
+    /* height: 70% !important; */
+    justify-content: space-between !important;
+}
+.carousel-indicators button {
+    width: 48% !important;
+    height: 100% !important;
+    margin-left: unset !important;
+    margin-right: unset !important;
+}
+.carousel-indicatorsY button img {
+    object-fit: cover;
+    object-position: center;
+}
+.carousel-item{}
+.carousel-item img{
+    object-fit: cover !important;
+    object-position: center !important;
+    /* height: 400px !important; */
+    width: 100% !important;
+}
+/* container */
 
 
+.carousel-indicatorsZ button {
+    width: 18% !important;
+    height: 100% !important;
+    margin-left: unset !important;
+    margin-right: unset !important;
+}
+.carousel-indicatorsZ button img {
+    object-fit: cover;
+    object-position: center;
+}
+
+/* mart details */
+
+.item .detail {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: red;
+    font-size: 15px;
+    transition: 0.8s !important;
+    z-index: 1000;
+    font-weight: 600;
+    display: none;
+}
+.detail-item:hover .detail{
+    display: block;
+    transition: 0.8s !important;
+}
+.detail-item:hover{
+    opacity: 0.5;
+    transition: 1s !important;
+}
